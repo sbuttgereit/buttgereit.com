@@ -4,4 +4,14 @@ title = 'Steven C. Buttgereit'
 theme = 'scbtheme'
 
 [params]
-  tagline = "Business Systems Consultant & Software Developer"
+
+[params.landing]
+tagline = "Business Systems Consultant & Software Developer"
+portrait = "img/landing/scb_portrait_500_521.jpg"
+
+[params.social]
+linkedin_url = "https://www.linkedin.com/in/stevencbuttgereit"
+
+
+
+
