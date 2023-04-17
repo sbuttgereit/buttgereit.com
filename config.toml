@@ -6,12 +6,34 @@ theme = 'scbtheme'
 [params]
 
 [params.landing]
+copyright_owner = "Steven C. Buttgereit"
 tagline = "Business Systems Consultant & Software Developer"
 portrait = "img/landing/scb_portrait_500_521.jpg"
 
 [params.social]
 linkedin_url = "https://www.linkedin.com/in/stevencbuttgereit"
 
+[menu]
 
+[[menu.landing]]
+	name = "Professional Background"
+	pageRef = "/resume"
+	weight = 10
+	[menu.landing.params]
+		image = "heroicons/24/outline/document-text.svg"
 
+[[menu.landing]]
+	name = "Muse Systems"
+	url = "https://muse.systems"
+	weight = 20
+	[menu.landing.params]
+		# image = "landing/muselogo.svg"
+		image = "heroicons/24/outline/globe-alt.svg"
+
+[[menu.landing]]
+	name = "Contact Steven"
+	pageRef = "/contact"
+	weight = 30
+	[menu.landing.params]
+		image = "heroicons/24/outline/envelope-open.svg"
 
