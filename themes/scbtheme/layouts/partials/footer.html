@@ -1,0 +1,11 @@
+<div class="md:fixed inset-x-0 bottom-0">
+  <div class=" p-10 flex flex-row bg-slate-600 gap-x-10">
+    {{ $copyright_message := now.Year }}
+    {{ if isset .Site.Params "landing" }}
+    {{ if isset .Site.Params.landing "copyright_owner" }}
+    {{ $copyright_message = printf "%s, %v" .Site.Params.landing.copyright_owner now.Year  }}
+    {{ end }}
+    {{ end }}
+    <p class="text-slate-100 mx-auto">Copyright Ⓒ {{ $copyright_message }}</p>
+  </div>
+</div>
