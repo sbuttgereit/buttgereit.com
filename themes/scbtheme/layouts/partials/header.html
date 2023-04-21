@@ -1,0 +1,22 @@
+<div class="flex flex-row my-8 gap-x-4">
+	<a href="/" class="my-auto" aria-label="Return to landing page.">
+		<h1 class="text-lg font-black hidden md:inline" aria-hidden="true">{{ .Site.Title }}</h1>
+		<img
+			src="{{ .Site.BaseURL }}img/favicons/favicon.svg"
+			class="border-2 p-2 rounded-lg min-w-[48px] md:hidden"
+			aria-hidden="true"/>
+	</a>
+	<div class="grow"></div>
+	<nav class="flex flex-row my-auto gap-x-4 md:gap-x-8">
+	  {{ $currentPage := . }}
+	  {{ range .Site.Menus.landing }}
+	  <a href="{{ .URL }}" aria-label={{ .Name }}>
+	  	<p class="my-auto font-bold hidden md:inline" aria-hidden="true">{{ .Name }}</p>
+	  	<img
+	  		src="{{ site.BaseURL }}img/{{ .Params.image }}"
+	  		class="border-2 p-2 rounded-lg min-w-[48px] md:hidden"
+	  		aria-hidden="true"/>
+	  </a>
+	  {{ end }}
+	</nav>
+</div>

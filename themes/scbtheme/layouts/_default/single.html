@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+
+  {{ partial "head.html" . }}
+
+  <body>
+
+        <div class="h-full w-[90%] md:w-[95%] container flex flex-col mx-auto items-top justify-items-center">
+
+            {{- partial "header.html" . -}}
+
+            <div class="flex flex-col md:flex-row items-top justify-items-center">
+
+                {{ .Content }}
+                <div class="grow mb-12 md:mx-2"></div>
+
+            </div>
+
+        </div>
+
+        {{- partial "footer.html" . -}}
+
+  </body>
+</html>
