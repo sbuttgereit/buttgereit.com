@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<div class="h-full w-[90%] md:w-[95%] container flex flex-col mx-auto items-top justify-items-center">
+
+  {{- partial "header.html" . -}}
+
+  <div class="flex flex-row items-top justify-items-center gap-x-4 overflow-auto">
+    <nav class="basis-1/5 h-[70vh] flex flex-col border-2 rounded-lg p-2 hidden md:inline ">
+      <ul class="mx-2">
+        <li class="font-black m-2"><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ range .Pages }}
+          <li class="m-2">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </li>
+        {{ end }}
+      </ul>
+      <div class="w-full"></div>
+    </nav>
+    <main class="basis-4/5">
+      <h1 class="font-black text-2xl mx-auto my-4">Professional Experience - {{ .Title }}</h1>
+
+      {{ .Content }}
+    </main>
+  </div>
+
+</div>
+
+{{ end }}
