@@ -8,7 +8,7 @@ theme = 'scbtheme'
 [params.landing]
 copyright_owner = "Steven C. Buttgereit"
 tagline = "Business Systems Consultant & Software Developer"
-portrait = "img/landing/scb_portrait_500_521.jpg"
+portrait = "img/landing/scb_portrait_landing.webp"
 
 [params.social]
 linkedin_url = "https://www.linkedin.com/in/stevencbuttgereit"
