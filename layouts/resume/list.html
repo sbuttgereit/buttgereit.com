@@ -4,9 +4,9 @@
 
   {{- partial "header.html" . -}}
 
-  <div class="flex flex-row items-top justify-items-center gap-x-4 overflow-auto">
-    <nav class="basis-1/5 h-[70vh] flex flex-col border-2 rounded-lg p-2 hidden md:inline ">
-      <ul class="mx-2">
+  <div class="flex flex-col md:flex-row h-full mx-auto items-top justify-items-center gap-x-4 overflow-auto mb-4 md:mb-[110px]">
+    <nav class="basis-1/5 md:h-fit border-2 rounded-lg p-2 ">
+      <ul class="mx-2 flex flex-wrap md:flex-col gap-x-4 md:gap-x-0">
         <li class="font-black m-2"><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
         {{ range .Pages }}
           <li class="m-2">
@@ -14,7 +14,6 @@
           </li>
         {{ end }}
       </ul>
-      <div class="w-full"></div>
     </nav>
     <main class="basis-4/5">
       <h1 class="font-black text-2xl mx-auto my-4">Professional Experience - {{ .Title }}</h1>
