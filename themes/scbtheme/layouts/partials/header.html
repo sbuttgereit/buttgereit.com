@@ -10,7 +10,11 @@
 	<nav class="flex flex-row my-auto gap-x-4 md:gap-x-8">
 	  {{ $currentPage := . }}
 	  {{ range .Site.Menus.landing }}
+	  {{- if hasPrefix .URL "http" -}}
+	  <a href="{{ .URL }}" aria-label={{ .Name }} target="_blank">
+	  {{- else -}}
 	  <a href="{{ .URL }}" aria-label={{ .Name }}>
+	  {{- end -}}
 	  	<p class="my-auto font-bold hidden md:inline" aria-hidden="true">{{ .Name }}</p>
 	  	<img
 	  		src="{{ site.BaseURL }}img/{{ .Params.image }}"
