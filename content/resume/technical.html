@@ -8,6 +8,209 @@ menu = "resume"
 weight = 20
 +++
 
-# This is the technical experience page.
+<article class="flex flex-col gap-4">
+	<p>Think of something witty and profound about how I do tech.</p>
+	<div class="flex flex-wrap gap-4">
+		<section class="grow border-2 border-zinc-300 rounded-lg p-2 flex flex-col gap-2">
+			<h3 class="font-black text-xl">Databases</h3>
+			<p>Steven's strongest skills are focused on RDBMS technology. "Application DBA" skills of development and application concerns are areas of greater proficiency as compared to areas of operational scope such as storage management and replication.</p>
+			<div class="my-4 mx-8">
+				<ul class="grid grid-cols-1 list-disc list-outside gap-8">
+					<li>
+						<h3 class="font-bold text-lg mb-1">PostgreSQL <span class="font-normal text-sm ml-2">(~20 years experience)</span></h3>
+						<div>
+							<ul class="flex flex-wrap gap-y-2">
+								<li class="mx-4"><span class="font-bold">Proficient</span>
+									<ul class="my-2 mx-4">
+										<li>Schema Development</li>
+										<li>Query Development</li>
+										<li>Procedural Development (PL/pgSQL)</li>
+										<li>MVCC/Transactions/Concurrency</li>
+										<li>Application Performance (i.e. querying; indexing)</li>
+									</ul>
+								</li>
+								<li class="mx-4"><span class="font-bold">Competent</span>
+									<ul class="my-2 mx-4">
+										<li>Disaster Recovery (Backups)</li>
+										<li>Procedural Development (PL/v8)</li>
+										<li>Full Text Search</li>
+										<li>SQL/MED</li>
+										<li>Geospatial Functionality (PostGIS)</li>
+										<li>System Performance (i.e. kernel & I/O tuning)</li>
+									</ul>
+								</li>
+								<li class="mx-4"><span class="font-bold">Basic</span>
+									<ul class="my-2 mx-4">
+										<li>Availability</li>
+										<li>Replication</li>
+									</ul>
+								</li>
+							</ul>
+							<div class="mt-4 mx-4"><span class="font-bold">Significant Projects</span>
+								<ul class="my-2 mx-4 flex flex-wrap md:gap-y-1 gap-x-4 list-disc list-inside">
+									<li>Retail chain data migration/merge</li>
+									<li>Medical pricing search database</li>
+									<li>Inventory costing/valuation overhaul</li>
+									<li>ERP Dual Unit of Measure enhancement</li>
+									<li>Shipping container fulfillment module</li>
+									<li>Customer product catalog module</li>
+									<li>Sales order product configurator module</li>
+									<li>Develop multi-ERP SQL/MED integration</li>
+									<li>Design/Develop legal/financial services database</li>
+									<li>Various data integrations (Pentaho PDI, Boomi)</li>
+								</ul>
+							</div>
+							<div class="mt-4 mx-4"><span class="font-bold">Examples</span>
+								<ul class="my-2 mx-4 flex flex-wrap md:gap-y-1 gap-x-4 list-disc list-inside">
+									<li><a href="/documentation/technical/database/mssub_mcp/ms_syst_data/relationships.html" target="_blank" class="underline hover:bg-zinc-300">Database ERD Example</a></li>
+									<li><a href="/documentation/technical/database/mssub_mcp/ms_syst_priv/routines.html" target="_blank" class="underline hover:bg-zinc-300">Procedural Code Examples</a></li>
+									<li><a href="https://github.com/MuseSystems/musebms/tree/next_version/database/components/system/mscmp_syst_instance/ms_syst_data/syst_application_contexts" target="_blank" class="underline hover:bg-zinc-300 inline-block"><span class="flex flex-row gap-x-2">Table & Trigger Examples<img src="/img/resume/github-mark.svg" class="w-5 h-5" aria-label="GitHub Link"/></span></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<h3 class="font-bold text-lg mb-1">Oracle <span class="font-normal text-sm ml-2">(~10 years experience)</span></h3>
+						<div class="flex flex-col gap-y-4">
+							<p>Oracle was once Steven's prime competency with a similar skill profile as listed for PostgreSQL.  However, Steven has not worked regularly with Oracle for some time; skills which were once "Proficient" are now better described as "Competent" or "Basic".</p>
+							<p>Steven's Oracle hands on work was also more focused on day-to-day operational concerns than project oriented development.</p>
 
-Let's hope we can figure out how to make this look nice!
+							<div class="mt-4 mx-4"><span class="font-bold">Significant Projects</span>
+								<ul class="my-2 mx-4 flex flex-wrap md:gap-y-1 gap-x-4 list-disc list-inside">
+									<li>Retail chain data migration/merge</li>
+									<li>Emergency database server replacement</li>
+									<li>Batch style mass data maintenance</li>
+									<li>Performance analyses</li>
+									<li>Install & configure (Solaris & Linux based environments)</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<h3 class="font-bold text-lg mb-1">Other Databases</h3>
+						<div class="flex flex-col gap-y-4">
+							<p>Steven has occasionally worked with MS-SQL and MySQL, including performing installation and configuration.  This work was typically not sustained effort and was rather performed in the context of specific, limited duration projects.  Steven has managed teams developing and operating MS-SQL based applications, but this was management work with very little hands-on, individual contributor responsibility.</p>
+						</div>
+					</li>
+				</ul>
+			<div>
+		</section>
+		<section class="grow border-2 border-zinc-300 rounded-lg p-2 flex flex-col gap-2">
+			<h3 class="font-black text-xl">Application Development</h3>
+			<div class="my-4 mx-8">
+				<ul class="grid grid-cols-1 list-disc list-outside gap-8">
+					<li>
+						<div class="mb-4 flex flex-col gap-y-2">
+							<h3 class="font-bold text-lg mb-1">Qt, C++, & JavaScript<span class="font-normal text-sm ml-2">(~15 years experience)</span></h3>
+							<p>Steven has performed extensive work utilizing Qt, C++, and JavaScript to enhance and extend the <a href="https://xtuple.com" target="_blank" class="underline hover:bg-zinc-300">xTuple ERP</a> system client software.</p>
+							<p>The xTuple ERP client is a QtWidgets (Qt 5) based desktop client written in C++ which connects directly to a PostgreSQL database server.  The client allows extensive, though fairly low level customization via QtScript sufficient to modify existing functionality and to create new forms and functionality.</p>
+							<p>Steven's experience with Qt began with developing extensions using QtScript and QtDesigner (~15 years).  Later, as Steven's work focused on enhancing xTuple's core product, he worked directly on the C++ code base (~5 years).</p>
+							<p>xTuple ERP targeted C++11 as the language standard for their implementation. Given the scope of C++, this skill can be difficult to characterize with a simple proficiency grade and as such C++ is listed as "Competent".  Steven's skill with business logic and OOP essentials would likely be characterized as "proficient", but some systems oriented C++ and more advanced topics such as advanced memory management, templates, etc. would be either "Competent" or "Basic" depending on their frequency in simple accounting software.</p>
+						</div>
+						<div>
+							<ul class="flex flex-wrap gap-y-2">
+								<li class="mx-4"><span class="font-bold">Proficient</span>
+									<ul class="my-2 mx-4">
+										<li>QtWidgets</li>
+										<li>QtDesigner/Qt's forms XML</li>
+										<li>QtScript (embedded ECMAScript)</li>
+										<li>QtWidgets App relevant Qt libraries</li>
+									</ul>
+								</li>
+								<li class="mx-4"><span class="font-bold">Competent</span>
+									<ul class="my-2 mx-4">
+										<li>C++</li>
+									</ul>
+								</li>
+								<li class="mx-4"><span class="font-bold">Basic</span>
+									<ul class="my-2 mx-4">
+										<li>Qt Model/View framework</li>
+										<li>QML</li>
+									</ul>
+								</li>
+							</ul>
+							<div class="mt-4 mx-4"><span class="font-bold">Significant Projects</span>
+								<ul class="my-2 mx-4 flex flex-wrap md:gap-y-1 gap-x-4 list-disc list-inside">
+									<li>Shipping container fulfillment module (QtScript)</li>
+									<li>Customer product catalog (QtScript)</li>
+									<li>Enhanced user defined fields and form builder (QtScript)</li>
+									<li>Sales order product configurator enhancement (C++)</li>
+									<li>Dual Unit of Measure enhancement (C++)</li>
+									<li>Inventory costing/valuation refresh (C++)</li>
+								</ul>
+							</div>
+							<div class="mt-4 mx-4"><span class="font-bold">Examples</span>
+								<p class="mt-2">Please note that only QtScript examples are provided as Steven does not hold rights to the C++ code he's developed.  Screenshots of Sales Order Product Configurator Qt forms, as implemented, can be seen in training documentation.</p>
+								<ul class="my-2 mx-4 flex flex-wrap md:gap-y-1 gap-x-4 list-disc list-inside">
+									<li><a href="https://github.com/MuseSystems/musesuperchar/tree/develop/client/scripts" class="underline hover:bg-zinc-300 inline-block" target="_blank"><span class="flex flex-row gap-x-2">User Defined Fields/Form Builder (QtScript)<img src="/img/resume/github-mark.svg" class="w-5 h-5" alt="GitHub"/></span></a></li>
+									<li><a href="/ConfigurableKitsBasicTraining.pdf" class="underline hover:bg-zinc-300" target="_blank">Sales Order Product Configurator training (form examples)</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="mb-4 flex flex-col gap-y-2">
+							<h3 class="font-bold text-lg mb-1">Elixir/Phoenix Framework/OTP<span class="font-normal text-sm ml-2">(~2 years experience)</span></h3>
+							<p>Steven selected the Elixir language for the Muse Systems Business Management System project due to its being built upon the efficient and resilient Erlang BEAM VM runtime environment, the development productivity of the language, and the availability and quality of essential frameworks and libraries including the Phoenix Framework and Ecto.</p>
+							<p>Overall, Steven is "Competent" with Elixir, Phoenix, Ecto, and the other commonly used libraries.  While Steve has accomplished much with Elixir, covering a broad number of OTP and framework/library concerns, his experience with Elixir is as a solo developer and he has not yet worked with Elixir in production environments.</p>
+						</div>
+						<div class="mt-4 mx-4"><span class="font-bold">Example Project</span>
+							<p class="mt-2">The <a href="https://github.com/MuseSystems/musebms" class="underline hover:bg-zinc-300" target="_blank">Muse Systems Business Management System</a> (MuseBMS) is a small Enterprise Resource Planning class system designed as both a a playground and proving ground for certain ideas and to test certain limits in business systems development.  Important context for evaluating the code in this project is that the project's nature also results in certain unconventional choices in Elixir application development as well.  Finally, the project is a work in progress and is under active development so functionality may not be complete or may change from time-to-time.</p>
+							<ul class="my-2 mx-4 flex flex-wrap md:gap-y-1 gap-x-4 list-disc list-inside">
+								<li><a href="https://github.com/MuseSystems/musebms" target="_blank" class="underline hover:bg-zinc-300 inline-block"><span class="flex flex-row gap-x-2">MuseBMS Project Root<img src="/img/resume/github-mark.svg" class="w-5 h-5" alt="GitHub"/></span></a></li>
+								<li><a href="https://github.com/MuseSystems/musebms/tree/next_version/app_server/components/system/mscmp_syst_instance" target="_blank" class="underline hover:bg-zinc-300 inline-block"><span class="flex flex-row gap-x-2">Example Elixir Application<img src="/img/resume/github-mark.svg" class="w-5 h-5" alt="GitHub"/></span></a></li>
+								<li><a href="/documentation/technical/app_server/mscmp_syst_instance" target="_blank" class="underline hover:bg-zinc-300">Example Application Documentation</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="mb-4 flex flex-col gap-y-2">
+							<h3 class="font-bold text-lg mb-1">Web/Front End Development</h3>
+							<p>Steven's has a basic HTML/CSS competence in web development matters, but typically doesn't work in web related front end development.  His skills would be consistent with a "Basic" level of proficiency.  Much of Steven's experience in this regard is from helping clients with emergency support related needs, troubleshooting issues with development work done by others.</p>
+						</div>
+						<div>
+							<div class="mt-4 mx-4"><span class="font-bold">Significant Projects & Examples</span>
+								<ul class="my-2 mx-8 flex flex-wrap md:gap-y-1 gap-x-4 list-disc list-outside">
+									<li><a href="https://github.com/sbuttgereit/buttgereit.com" class="underline hover:bg-zinc-300 inline-block" target="_blank"><span class="flex flex-row gap-x-2">buttgereit.com<img src="/img/resume/github-mark.svg" class="w-5 h-5" alt="GitHub"/></span></a>
+										<p class="my-2">This website was built using the <a href="https://gohugo.io" class="underline hover:bg-zinc-300" target="_blank">Hugo</a> static website generator. Steven created both the Hugo theme and content for this website.  The website is a mix of Go templates, standard HTML and styling with <a href="https://tailwindcss.com/" class="underline hover:bg-zinc-300" target="_blank">Tailwind CSS</a></p>
+									</li>
+									<li><a href="https://github.com/MuseSystems/muse.systems" class="underline hover:bg-zinc-300 inline-block" target="_blank"><span class="flex flex-row gap-x-2">muse.systems<img src="/img/resume/github-mark.svg" class="w-5 h-5" alt="GitHub"/><span></a> (<a href="https://muse.systems" class="underline hover:bg-zinc-300" target="_blank">website</a>)
+										<p class="my-2">The Muse Systems marketing website was also built using the <a href="https://gohugo.io" class="underline hover:bg-zinc-300" target="_blank">Hugo</a> static website generator. Steven significantly modified an open source Hugo theme and created content website.  The website is a mix of Go templates, standard HTML, markdown content files, and styling with <a href="https://tailwindcss.com/" class="underline hover:bg-zinc-300" target="_blank">Tailwind CSS</a></p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="mb-4 flex flex-col gap-y-2">
+							<h3 class="font-bold text-lg mb-1">Other Languages & Tools</h3>
+							<p>Steven has worked with a variety of other languages and tools over the course of his career.  His experience and recency varies by each technology, but overall is less significant than those previously mentioned.</p>
+
+						</div>
+					</li>
+				</ul>
+			<div>
+		</section>
+		<section class="grow border-2 border-zinc-300 rounded-lg p-2 flex flex-col gap-2">
+			<h3 class="font-bold text-lg mb-1">Other Languages & Tools</h3>
+			<p>Steven has worked with a variety of other languages and tools over the course of his career.  His experience and recency varies by each technology, but overall is less significant than those previously mentioned.</p>
+			<ul class="mx-8 flex flex-wrap gap-y-2 list-disc list-outside">
+				<li class="mx-4">
+					<span class="font-bold">JavaScript (Node.js, other)</span>
+					<p class="my-2">Outside of QtScript, Steven does occasionally work with JavaScript.  Primarily this involves Node.js in some capacity.  Most work here deals with Node.js based tooling, but also includes some lighter application development or support requests from clients.</p>
+				</li>
+				<li class="mx-4">
+					<span class="font-bold">Java/Groovy</span>
+					<p class="my-2">Over the years Steven made various utilities and other small "internal" applications using Java.  He also used Groovy in developing integrations using the Boomi iPaaS service as well in similar small app development.</p>
+				</li>
+				<li class="mx-4"><span class="font-bold"><a href="https://boomi.com/" class="underline hover:bg-zinc-300" target="_blank">Boomi</a></span> (~2 years experience)
+					<p class="my-2">Implemented & maintained integrations between the NetSuite ERP system and bespoke client portal PostgreSQL databases.</p>
+				</li>
+				<li class="mx-4"><span class="font-bold"><a href="https://www.hitachivantara.com/en-us/products/dataops-software/data-integration-analytics.html" class="underline hover:bg-zinc-300" target="_blank">Pentaho Data Integration</a></span>
+					<p class="my-2">Multiple implementations including integrating external SaaS services to on-premise database/ERP systems and services end user data upload capabilities.</p>
+				</li>
+			</ul>
+		</section>
+	</div>
+</article>
+
