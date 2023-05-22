@@ -2,9 +2,9 @@
   {{ $currentPage := . }}
   {{ range .Site.Menus.landing }}
   {{- if hasPrefix .URL "http" -}}
-  <a class="border-2 border-zinc-300 rounded-lg p-2" href="{{ .URL }}" target="_blank">
+  <a class="border-2 border-zinc-300 hover:bg-zinc-300 rounded-lg p-2" href="{{ .URL }}" target="_blank">
   {{ else }}
-  <a class="border-2 border-zinc-300 rounded-lg p-2" href="{{ .URL }}">
+  <a class="border-2 border-zinc-300 hover:bg-zinc-300 rounded-lg p-2" href="{{ .URL }}">
   {{ end }}
     <div class="flex flex-row">
       <img src="{{ site.BaseURL }}img/{{ .Params.image }}" class="w-10 h-10 m-2" aria-hidden="true">

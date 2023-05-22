@@ -10,7 +10,7 @@
         <li class="font-black m-2"><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
         {{ range .Pages }}
           <li class="m-2">
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <a href="{{ .RelPermalink }}" class="hover:bg-zinc-300">{{ .Title }}</a>
           </li>
         {{ end }}
       </ul>
