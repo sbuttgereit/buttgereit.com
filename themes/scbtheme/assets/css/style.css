@@ -44,7 +44,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Helvetica, Arial, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -705,8 +705,16 @@ video {
   width: 2.5rem;
 }
 
+.w-24 {
+  width: 6rem;
+}
+
 .w-40 {
   width: 10rem;
+}
+
+.w-48 {
+  width: 12rem;
 }
 
 .w-5 {
@@ -727,6 +735,10 @@ video {
 
 .w-\[90\%\] {
   width: 90%;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .min-w-\[48px\] {
@@ -794,6 +806,10 @@ video {
   flex-wrap: wrap;
 }
 
+.content-center {
+  align-content: center;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -835,6 +851,10 @@ video {
 
 .gap-y-4 {
   row-gap: 1rem;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .overflow-auto {
@@ -885,6 +905,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-zinc-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+}
+
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -900,6 +925,10 @@ video {
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-4 {
@@ -918,6 +947,10 @@ video {
 
 .pr-6 {
   padding-right: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-justify {
@@ -994,6 +1027,16 @@ video {
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
+.focus\:border-zinc-900:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(24 24 27 / var(--tw-border-opacity));
+}
+
+.focus\:bg-white:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 768px) {
   .md\:fixed {
     position: fixed;
@@ -1033,6 +1076,10 @@ video {
     height: fit-content;
   }
 
+  .md\:w-\[90\%\] {
+    width: 90%;
+  }
+
   .md\:w-\[95\%\] {
     width: 95%;
   }
@@ -1061,6 +1108,12 @@ video {
 
   .md\:gap-y-1 {
     row-gap: 0.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:w-\[70\%\] {
+    width: 70%;
   }
 }
 
