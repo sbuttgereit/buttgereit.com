@@ -6,6 +6,9 @@
     {{ $copyright_message = printf "%s, %v" .Site.Params.landing.copyright_owner now.Year  }}
     {{ end }}
     {{ end }}
-    <p class="text-slate-100 mx-auto">Copyright Ⓒ {{ $copyright_message }}</p>
+    <div class="flex flex-col md:flex-row gap-y-2 md:gap-x-8 mx-auto">
+      <p class="text-slate-100 mx-auto">Copyright Ⓒ {{ $copyright_message }}</p>
+      <p class="text-slate-100 mx-auto"><a href="/acknowledgements" class="underline hover:bg-zinc-300 hover:text-slate-900">Acknowledgements</a></p>
+    </div>
   </div>
 </div>
