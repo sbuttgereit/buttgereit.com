@@ -709,10 +709,6 @@ video {
   height: max-content;
 }
 
-.max-h-\[500px\] {
-  max-height: 500px;
-}
-
 .w-10 {
   width: 2.5rem;
 }
@@ -755,10 +751,6 @@ video {
 
 .min-w-\[48px\] {
   min-width: 48px;
-}
-
-.max-w-\[350px\] {
-  max-width: 350px;
 }
 
 .max-w-fit {
@@ -1160,20 +1152,12 @@ video {
     height: fit-content;
   }
 
-  .md\:max-h-\[700px\] {
-    max-height: 700px;
-  }
-
   .md\:w-\[90\%\] {
     width: 90%;
   }
 
   .md\:w-\[95\%\] {
     width: 95%;
-  }
-
-  .md\:max-w-\[1000px\] {
-    max-width: 1000px;
   }
 
   .md\:grid-cols-2 {
