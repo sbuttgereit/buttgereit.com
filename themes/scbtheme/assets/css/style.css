@@ -567,6 +567,10 @@ video {
   bottom: 0px;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .order-1 {
   order: 1;
 }
@@ -644,6 +648,10 @@ video {
   margin-left: 0.5rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -701,6 +709,10 @@ video {
   height: max-content;
 }
 
+.max-h-\[500px\] {
+  max-height: 500px;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -743,6 +755,10 @@ video {
 
 .min-w-\[48px\] {
   min-width: 48px;
+}
+
+.max-w-\[350px\] {
+  max-width: 350px;
 }
 
 .max-w-fit {
@@ -812,6 +828,10 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.place-items-center {
+  place-items: center;
 }
 
 .content-center {
@@ -907,6 +927,11 @@ video {
   border-color: rgb(212 212 216 / var(--tw-border-opacity));
 }
 
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
 .bg-slate-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
@@ -951,6 +976,16 @@ video {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .py-4 {
@@ -1014,6 +1049,11 @@ video {
   font-style: italic;
 }
 
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
 .text-slate-100 {
   --tw-text-opacity: 1;
   color: rgb(241 245 249 / var(--tw-text-opacity));
@@ -1034,9 +1074,25 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:bg-gray-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-zinc-300:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(212 212 216 / var(--tw-bg-opacity));
+}
+
+.hover\:text-gray-900:hover {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .hover\:text-red-500:hover {
@@ -1104,12 +1160,20 @@ video {
     height: fit-content;
   }
 
+  .md\:max-h-\[700px\] {
+    max-height: 700px;
+  }
+
   .md\:w-\[90\%\] {
     width: 90%;
   }
 
   .md\:w-\[95\%\] {
     width: 95%;
+  }
+
+  .md\:max-w-\[1000px\] {
+    max-width: 1000px;
   }
 
   .md\:grid-cols-2 {
