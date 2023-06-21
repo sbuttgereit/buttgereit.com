@@ -1,42 +1,28 @@
-<!doctype html>
-<html lang="en">
+{{ define "main" }}
+<div class="h-max w-[90%] md:w-[95%] container flex flex-col mx-auto items-top justify-items-center">
+  {{- partial "header.html" . -}}
+  <div class="flex flex-col md:flex-row h-full items-top justify-items-center gap-x-4 overflow-auto mb-4 md:mb-[110px]">
+    <nav class="basis-1/5 md:h-fit border-2 rounded-lg p-2">
+      <ul class="mx-2 flex flex-wrap md:flex-col">
+        <li class="m-2"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></li>
+        {{ range (where .Site.Pages "Section" "resume") }}
+        {{ range .Pages }}
+          {{ if eq .Title page.Title }}
+          <li class="font-black m-2">
+          {{ else }}
+          <li class="m-2">
+          {{ end }}
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </li>
+        {{ end }}
+        {{ end }}
+      </ul>
+    </nav>
+    <main class="basis-4/5">
+      <h1 class="font-black text-2xl mx-auto my-4">Professional Experience - {{ .Title }}</h1>
 
-  {{ partial "head.html" . }}
-
-  <body class="text-slate-900 bg-stone-50">
-
-    <div class="h-max w-[90%] md:w-[95%] container flex flex-col mx-auto items-top justify-items-center">
-
-		  {{- partial "header.html" . -}}
-
-		  <div class="flex flex-col md:flex-row h-full items-top justify-items-center gap-x-4 overflow-auto mb-4 md:mb-[110px]">
-		    <nav class="basis-1/5 md:h-fit border-2 rounded-lg p-2">
-		      <ul class="mx-2 flex flex-wrap md:flex-col">
-		        <li class="m-2"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></li>
-		        {{ range (where .Site.Pages "Section" "resume") }}
-		        {{ range .Pages }}
-		          {{ if eq .Title page.Title }}
-		          <li class="font-black m-2">
-		          {{ else }}
-		          <li class="m-2">
-		          {{ end }}
-		            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-		          </li>
-		        {{ end }}
-		        {{ end }}
-		      </ul>
-
-		    </nav>
-		    <main class="basis-4/5">
-		      <h1 class="font-black text-2xl mx-auto my-4">Professional Experience - {{ .Title }}</h1>
-
-		      {{ .Content }}
-		    </main>
-		  </div>
-
-		</div>
-
-        {{- partial "footer.html" . -}}
-
-  </body>
-</html>
+      {{ .Content }}
+    </main>
+  </div>
+</div>
+{{ end }}
