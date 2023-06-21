@@ -3,6 +3,8 @@ languageCode = 'en-us'
 title = 'Steven C. Buttgereit'
 theme = 'scbtheme'
 
+googleAnalytics = "G-K12K038E4D"
+
 [params]
 
 [params.landing]
